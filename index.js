@@ -14,7 +14,6 @@ async function getDownloadsFolder() {
 async function organizeDownloads() {
     try {
         const downloadsFolder = await getDownloadsFolder();
-        console.log(downloadsFolder)
         const compressedFolder = path.join(downloadsFolder, 'compressed');
         const documentsFolder = path.join(downloadsFolder, 'documents');
         const audioFolder = path.join(downloadsFolder, 'audio');
